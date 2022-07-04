@@ -5,19 +5,19 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
-const Beranda = lazy(() => import('./Beranda'));
-const Beranda2 = lazy(() => import('./Beranda2'));
-const PembinaanPengawasan = lazy(() => import('./PembinaanPengawasan'));
-const Reformasi = lazy(() => import('./Reformasi'));
-const PenegakanIntegritas = lazy(() => import('./PenegakanIntegritas'));
-const PelayananPublik = lazy(() => import('./PelayananPublik'));
-const Product = lazy(() => import('./Product'));
-const Features = lazy(() => import('./Features'));
-const Navbar = lazy(() => import('./Navbar'));
-const Login = lazy(() => import('./Login'));
-const Profil = lazy(() => import('./Profil'));
-const Berita = lazy(() => import('./Berita'));
-const LayananKonsultasi = lazy(() => import('./LayananKonsultasi'));
+const Beranda = lazy(() => import('./routes/Beranda'));
+const PembinaanPengawasan = lazy(() => import('./routes/PembinaanPengawasan'));
+const Reformasi = lazy(() => import('./routes/Reformasi'));
+const PenegakanIntegritas = lazy(() => import('./routes/PenegakanIntegritas'));
+const PelayananPublik = lazy(() => import('./routes/PelayananPublik'));
+const Product = lazy(() => import('./routes/Product'));
+const Features = lazy(() => import('./routes/Features'));
+const Navbar = lazy(() => import('./routes/Navbar'));
+const Login = lazy(() => import('./routes/Login'));
+const Profil = lazy(() => import('./routes/Profil'));
+const Swiper = lazy(() => import('./routes/Swiper'));
+const Berita = lazy(() => import('./routes/Berita'));
+const LayananKonsultasi = lazy(() => import('./routes/LayananKonsultasi'));
 
 
 
@@ -28,7 +28,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Beranda />} />
-          <Route path="/beranda2" element={<Beranda2 />} />
+          <Route path="/Beranda" element={<Beranda />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Features" element={<Features />} />
           <Route path="/Navbar" element={<Navbar />} />
@@ -41,6 +41,7 @@ function App() {
           <Route path="/LayananKonsultasi" element={<LayananKonsultasi />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Profil" element={<Profil />} />
+          <Route path="/Swiper" element={<Swiper />} />
         </Routes>
       </Suspense>
     </Router>

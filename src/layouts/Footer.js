@@ -17,43 +17,82 @@ export default function Footer() {
             x="0"
             y="0"
           >
-         
+            <polygon
+              className="text-blueGray-200 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
           </svg>
         </div>
-        <div className="w-full mx-auto bg-white border-t-2 shadow-lg py-6 flex flex-col justify-center items-center pb-0">
-        <div className="w-11/12 sm:w-10/12 mx-auto flex justify-around flex-wrap flex-col sm:flex-row">
-            <div className="flex md:items-center items-start flex-col md:flex-row w-full md:w-auto mb-4">
-                <img className="block h-28 w-auto md:mx-auto md:mr-6" src={process.env.PUBLIC_URL + '/assets/images/logo-inf.jpg'} alt="Workflow" />
-                <div className="text-base md:mt-4">
-                    <h1 className="font-semibold text-xl text-blue-800 mb-2">INFOMEDIA TECHNOLOGY</h1>
-                    <p>	Jl. Cendrawasih L-5, PGTSI, Bojongsari,</p>
-                    <p className="mb-1">Kembaran, Banyumas, Jawa Tengah</p>
-                    <p className="mb-1">Telp : 0852 2740 9102</p>
-                </div>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap text-center lg:text-left">
+            <div className="w-full lg:w-6/12 px-4">
+              <h4 className="text-3xl font-semibold">SEKSI STATISTIK</h4>
+              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+                DINAS KOMUNIKASI DAN INFORMATIKA KABUPATEN BANJAR
+              </h5>
+             {/*  <div className="mt-6 lg:mb-0 mb-6">
+                <button
+                  className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i className="fab fa-twitter"></i>
+                </button>
+                <button
+                  className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i className="fab fa-facebook-square"></i>
+                </button>
+                <button
+                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i className="fab fa-dribbble"></i>
+                </button>
+                <button
+                  className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i className="fab fa-github"></i>
+                </button>
+              </div> */}
             </div>
-            <div className="mb-4">
-                <h1 className="font-medium mb-2">Menu</h1>
-                <div className="flex flex-col space-y-1">
-                    <a href="i">Home</a>
-                    <a href="i">Services</a>
-                    <a href="i">Portfolio</a>
-                    <a href="i">About</a>
+            
+            <div className="w-full lg:w-6/12 px-4">
+              <div className="flex flex-row items-top mb-6">
+                <div className="">
+                  <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                    KONTAK KAMI
+                  </span>
+                  <h6>
+                    Jl. A. Yani No. 16, Krandegan, Kec. Banjar, Banjar, Jawa Tengah 53414  
+                  </h6>
+                  <h6 className="mt-2">
+                    0286-591218 Fax. 0286-591187<br/>
+                    dinkominfo@banjarkab.go.id <br/>
+                    Sms Center : 081-228-124447
+                  </h6>
                 </div>
+              </div>
             </div>
+          </div>
+          <hr className="my-6 border-blueGray-300" />
+          <div className="flex flex-wrap items-center md:justify-between justify-center">
+            <div className="w-full px-4 mx-auto text-center">
+              <div className="text-sm text-blueGray-500 font-semibold py-1">
+                Copyright © {new Date().getFullYear()} SEKSI STATISTIK DINAS KOMUNIKASI DAN INFORMATIKA KABUPATEN BANJAR{" "}
+            {/*     <a
+                  href="https://www.creative-tim.com?ref=nr-footer"
+                  className="text-blueGray-500 hover:text-blueGray-800"
+                >
+             
+                </a> */}
+                
+              </div>
+            </div>
+          </div>
         </div>
-                <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-                <div className="text-sm text-blueGray-500 font-semibold py-1">
-        Copyright © {new Date().getFullYear()} All rights reserved | Infomedia Techonlogy{" "}
-           
-        </div>
-        </div>
-    </div>
       </footer>
     </>
   );
 }
-
-
-
-
-

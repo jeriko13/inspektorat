@@ -12,6 +12,7 @@ import {
   useParams
 } from "react-router-dom";
 export default function Berita__() {
+  
   let { params } = useParams();
   const [keywords, setKeywords] = useState((params) ? params : '');
     const [dataInformasi,setDataInformasi] = useState([]);

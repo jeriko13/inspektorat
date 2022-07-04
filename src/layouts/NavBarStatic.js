@@ -4,11 +4,12 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Services', href: '/services' },
-  { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Informasi', href: '/informasi' },
-  { name: 'About Us', href: '/about' },
+  { name: 'Beranda', href: '/' },
+  { name: 'Profil Inspektorat', href: 'Profil' },
+  { name: 'Pembinaan Pengawasan', href: 'PembinaanPengawasan' },
+  { name: 'Reformasi Birokrasi & Pencegahan Tipikor', href: 'Reformasi' },
+  { name: 'Penegakan Integritas', href: 'PenegakanIntegritas' },
+  { name: 'Pelayanan Publik', href: 'PelayananPublik' },
 ]
 
 const classNames = (...classes) => classes.filter(Boolean).join(' ')
@@ -26,7 +27,9 @@ export default function NavBarStatic() {
                         <div className="flex items-center justify-between w-full md:w-auto">
                         <a href="/" className="flex items-center">
                             <span className="sr-only">Infomedia</span>
-                            <h1 className={classNames(transparent ? 'text-slate-50' : 'text-blue-800','text-base font-semibold transition-all')}>INFOMEDIA TECHNOLOGY</h1>
+                            <img className="w-auto h-10 mr-3" src={process.env.PUBLIC_URL + '/banjar.png'} alt="Workflow" />
+                           
+                            <h1 className={classNames(transparent ? 'text-slate-50' : 'text-blue-800','text-base font-semibold transition-all')}>PEMERINTAH KABUPATEN BANJAR</h1>
                         </a>
                         <div className="-mr-2 flex items-center md:hidden">
                             <Popover.Button className={classNames( transparent ? 'text-white' : 'bg-white hover:bg-gray-100' , 'rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 transition-all')}>
